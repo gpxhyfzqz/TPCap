@@ -25,7 +25,6 @@ class TPCap(Blip2Base):
         freeze_qformer=True,
         num_query_token=32,
         num_query_token_txt=8,
-        topn=9,
         llama_model="",
         prompt_path="prompts/prompt1.txt",
         prompt_path2="prompts/prompt2.txt",
@@ -38,8 +37,6 @@ class TPCap(Blip2Base):
         super().__init__()
 
         self.low_resource = low_resource
-        self.topn = topn
-        print('topn:', self.topn)
 
         ##### Image 
         print('Loading VIT')
