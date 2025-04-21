@@ -15,7 +15,7 @@ python -u eval_tpcap.py \
 --device cuda:$DEVICE \
 --name_of_datasets coco \
 --path_of_val_datasets data/coco/test_captions.json \
---image_folder /data/MSCOCO/ \   ### your image path 
+--image_folder /data/MSCOCO/ \
 --out_path=$NOCAPS_OUT_PATH \
 |& tee -a  ${NOCAPS_LOG_FILE}
 
