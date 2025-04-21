@@ -227,7 +227,7 @@ def main(args) -> None:
     device = args.device
     # loading model
     model_type = "vicuna-7b-v1.3"               ### your model path
-    ckpt = 'results/train_evcap/000.pt'
+    ckpt = 'results/train_tpcap/000.pt'
     print('load:', ckpt)
     model = TPCap(
             vit_model="eva_clip_g",
