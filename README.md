@@ -41,5 +41,5 @@ bash ./scripts/eval_tpcap_whoops.sh whoops 0
 
 ## Acknowledgements
 ---
-This repo is built on [EVCap](https://github.com/Jiaxuan-Li/EVCap), and we thank the authors for their great effort.
+This repo is built on [EVCap](https://github.com/Jiaxuan-Li/EVCap), and we thank the authors for their great effort.  
 The evaluation and data files are from [ViECap](https://github.com/FeiElysia/ViECap), and we thank the authors for their work.
