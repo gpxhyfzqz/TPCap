@@ -60,7 +60,7 @@ def validation_whoops(
     device = args.device
 
     predicts = []
-    
+    examples = load_dataset('nlphuji/whoops', token='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')
     model.eval()
     for example in examples['test']:
         image_id = example['image_id']
