@@ -15,7 +15,7 @@ python -u eval_tpcap.py \
 --device cuda:$DEVICE \
 --name_of_datasets flickr30k \
 --path_of_val_datasets data/flickr30k/test_captions.json \
---image_folder /flickr30k/flickr30k-images/ \        # your image path
+--image_folder /flickr30k/flickr30k-images/ \
 --out_path=$FLICKR_OUT_PATH \
 |& tee -a  ${NOCAPS_LOG_FILE}
 
