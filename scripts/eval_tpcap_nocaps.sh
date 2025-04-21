@@ -16,7 +16,7 @@ python -u eval_tpcap.py \
 --device cuda:$DEVICE \
 --name_of_datasets nocaps \
 --path_of_val_datasets data/nocaps/nocaps_corpus.json \
---image_folder /nocaps/val_imgs \   ### your image path
+--image_folder /nocaps/val_imgs \
 --out_path=$NOCAPS_OUT_PATH \
 |& tee -a  ${NOCAPS_LOG_FILE} 
 
