@@ -241,7 +241,6 @@ class TPCap(Blip2Base):
             bos_embeds = self.llama_model.model.embed_tokens(bos)
             align_txt = torch.cat([bos_embeds, prompt_embeds], dim=1)
             sentence_ = greedy_search(embeddings = align_txt, tokenizer = self.llama_tokenizer, model = self.llama_model)
-            print(sentence_)
             text = self.bert_tokenizer(
                     sentence_,
                     truncation=True,
