@@ -136,7 +136,6 @@ def main():
     parser.add_argument('--dist_url', default = "env://")
     parser.add_argument('--world_size', type = int, default = 1)
     parser.add_argument('--num_query_token_txt', type = int, default = 8)
-    parser.add_argument('--topn', type = int, default = 9)
     parser.add_argument('--disable_random_seed', action = 'store_true', default = False, help = 'set random seed for reproducing')
     parser.add_argument('--random_seed', type = int, default = 42, help = 'set random seed for reproducing')
     args = parser.parse_args()
@@ -161,7 +160,6 @@ def main():
             freeze_qformer=True,
             num_query_token=32,
             num_query_token_txt=args.num_query_token_txt,
-            topn = args.topn,
             llama_model=model_type,
             prompt_path="prompts/prompt1.txt",
             prompt_path2="prompts/prompt2.txt",
