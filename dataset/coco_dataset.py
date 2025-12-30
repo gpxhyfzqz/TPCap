@@ -28,7 +28,7 @@ class COCODataset(Dataset):
     def __init__(self, data_root):
         # ann_path = os.path.join(data_root, 'annotations/captions_train2014.json')
         # self.vis_root=os.path.join(data_root, 'train2014')
-        ann_path = '/home/zry/data/annotation/captions_train2014.json'
+        ann_path = './annotation/captions_train2014.json'    ### your captions_train2014.json path
         self.vis_root = data_root
         self.annotation = []
         self.annotation.extend(json.load(open(ann_path, "r"))['annotations'])
