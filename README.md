@@ -7,7 +7,7 @@
 mkdir ./evaluation
 unzip evaluation.zip -d ./evaluation
 mkdir ./data
-unzip evaluation.zip -d ./data
+unzip annotations.zip -d ./data
 ```
 4.Download LLaVA pretrained projector [Vicuna-7B-v1.3](https://huggingface.co/liuhaotian/llava-pretrain-vicuna-7b-v1.3)
 
