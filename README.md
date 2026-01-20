@@ -2,7 +2,7 @@
 ## Setup
 1.Install the required packages using conda with the provided [environment.yaml](environment.yaml) file.  
 2.Preparing the dataset.  
-3.Download [evaluation.zip](https://github.com/FeiElysia/ViECap/releases/download/checkpoints/evaluation.zip) and [annotations.zip](https://github.com/FeiElysia/ViECap/releases/download/checkpoints/annotations.zip) files, and unzip them to __evaluation__ and __data__ (you should create them first).  
+3.Download [evaluation.zip](https://github.com/FeiElysia/ViECap/releases/download/checkpoints/evaluation.zip) and [annotations.zip](https://github.com/FeiElysia/ViECap/releases/download/checkpoints/annotations.zip) files, and unzip them to __evaluation__ (you should create it first) and __data__ .  
 ```
 mkdir ./evaluation
 unzip evaluation.zip -d ./evaluation
